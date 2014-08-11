@@ -1,0 +1,1 @@
+{ "title" : "Test Scatter Plot", "color" : "orange", "data" : [ { "label" : "Test data constant", "data" : [ 3, 2, 2, 2, 2 ] },{ "label" : "Test data vary", "data" : [ 1, 2, 3, 4, 5 ] } ] }

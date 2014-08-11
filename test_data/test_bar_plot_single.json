@@ -1,0 +1,1 @@
+{ "title" : "Bar Chart Single Series", "x_axis" : "Bar Chart X Axis", "y_axis" : "Bar Char Y Axis", "data" : [ { "data" : [1,2,3,4,5], "error" : [ 0.5, 0.4, 0.3, 0.2, 0.1], "color" : "yellow", "label" : "Series One", "x_ticks" : [ "one", "two", "three", "four", "five" ]  } ] }
