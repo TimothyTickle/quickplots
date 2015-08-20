@@ -59,17 +59,17 @@ class QuickPlot(object):
         args_cur = self.func_read_parameters()
         self.func_plot_from_paths( args_cur.hndl_input_file, args_cur.str_output_file )
 
-    def func_plot_from_paths( self, str_path_json, str_path_output_plot ):
+    def func_plot_from_paths( self, hndl_path_json, str_path_output_plot ):
         """
         Allow to plot from paths if needed.
         """
-        json_cur = json.load( str_path_json )
+        json_cur = json.load( hndl_path_json )
         
         # Check to make sure the json object has a data section
         if not c_STR_DATA in json_cur:
             print "".join( [ "Please make sure the JSON input file has a data labeled \"", self.str_DATA,"\"" ] )
 
-        self.func_plot(json_cur, str_path_output_plot )
+        self.func_plot( json_cur, str_path_output_plot )
 
     @abc.abstractmethod
     def func_plot( self, json_data, str_output_file ):
