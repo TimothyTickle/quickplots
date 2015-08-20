@@ -59,7 +59,7 @@ class QuickPlot(object):
         args_cur = self.func_read_parameters()
         self.func_plot_from_paths( args_cur.hndl_input_file, args_cur.str_output_file )
 
-    def func_plot_from_paths( str_path_json, str_path_output_plot ):
+    def func_plot_from_paths( self, str_path_json, str_path_output_plot ):
         """
         Allow to plot from paths if needed.
         """
